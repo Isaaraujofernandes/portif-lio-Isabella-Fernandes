@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabella Fernandes | Portfólio</title>
+  <meta name="description" content="Portfólio de Isabella Fernandes — projetos de desenvolvimento web, habilidades e formas de contato." />
+
+  <!-- Estilos do site (arquivo separado) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       BIBLIOTECA DE ÍCONES (SVG)
+       Todos os ícones ficam guardados aqui e são "puxados" nas
+       seções com <use href="#nome-do-icone">. Assim o código fica
+       mais limpo e cada ícone só é escrito uma vez.
+       ============================================================ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="#F1EBEB" stroke="#F1EBEB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  </svg>
+
+  <!-- ============================================================
+       CABEÇALHO FIXO
+       ============================================================ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Ir para o início">
+        Portfólio<span class="logo-dot">.</span>
+      </a>
+
+      <div class="header-actions">
+        <!-- Links (aparecem só no desktop) -->
+        <nav class="nav-desktop" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
+
+        <!-- Botão claro/escuro -->
+        <button class="theme-toggle" type="button" aria-label="Alternar entre modo claro e escuro" title="Alternar tema">
+          <svg class="icon i-20 icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon i-20 icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+
+        <!-- Botão do menu (aparece só no celular) -->
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <svg class="icon i-24 icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-24 icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu do celular -->
+    <nav class="nav-mobile" aria-label="Navegação mobile">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       CAPA (HERO) — fundo vermelho #380809
+       ============================================================ -->
+  <section id="inicio" class="hero">
+    <!-- Bolhas decorativas de fundo -->
+    <span class="hero-blob hero-blob--top" aria-hidden="true"></span>
+    <span class="hero-blob hero-blob--bottom" aria-hidden="true"></span>
+
+    <div class="wrap hero-grid">
+      <!-- Foto da capa -->
+      <div class="hero-photo">
+        <span class="hero-photo-bg" aria-hidden="true"></span>
+        <span class="hero-photo-ring" aria-hidden="true"></span>
+        <div class="hero-photo-circle">
+          <img src="images/foto-perfil.webp" alt="Foto de Isabella Fernandes" />
+        </div>
+        <span class="hero-badge"></span>
+        <svg class="icon i-28 hero-sparkles" aria-hidden="true"><use href="#i-sparkles"/></svg>
+        <span class="hero-prazer" aria-hidden="true">prazer!</span>
+      </div>
+
+      <!-- Texto da capa -->
+      <div class="hero-text">
+    
+        <h1 class="font-serif">Isabella Fernandes</h1>
+
+        <div class="hero-role">
+          <span class="hero-role-line" aria-hidden="true"></span>
+          <p>Desenvolvedora Web</p>
+          <span class="hero-role-line" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-desc">
+          Bem-vindo ao meu cantinho digital! Aqui você encontra um pouco da
+          minha jornada, dos projetos que construí com carinho e das
+          habilidades que venho desenvolvendo ao longo do caminho.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-light">Ver projetos</a>
+          <a href="#contatos" class="btn btn-outline">Fale comigo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador de rolagem -->
+    <div class="hero-scroll">
+      <a href="#sobre" aria-label="Rolar para a seção Sobre Mim">
+        <span>Role para baixo</span>
+        <svg class="icon i-20 bounce" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MIM
+       ============================================================ -->
+  <section id="sobre" class="about">
+    <div class="wrap about-grid">
+      <!-- Lado esquerdo: inicial IF -->
+      <div class="about-visual">
+        <span class="about-outer" aria-hidden="true"></span>
+        <div class="about-if">
+          <span class="font-serif">IF</span>
+        </div>
+        <span class="about-hand about-hand--top font-hand" aria-hidden="true">proativa</span>
+        <span class="about-hand about-hand--bottom font-hand" aria-hidden="true">dedicada</span>
+       
+      </div>
+
+      <!-- Lado direito: texto -->
+      <div class="about-content">
+        <span class="about-eyebrow">Sobre mim</span>
+        <h2 class="font-serif">Um pouco da minha <span class="about-hand-title font-hand">história</span></h2>
+
+        <p>
+          Sou a Isabella, estudante de desenvolvimento web apaixonada por
+          transformar ideias em páginas bonitas e funcionais. Comecei mexendo
+          com HTML e CSS esse ano e me encantei com
+          uma forma de unir lógica e criatividade no dia a dia.
+        </p>
+        <p class="mt-4">
+          Desde então, venho construindo projetos próprios para praticar e
+          evoluir a cada linha de código. Cada desafio vira uma oportunidade
+          de aprender algo novo — e é exatamente isso que me motiva a seguir
+          nessa área.
+        </p>
+
+        <!-- Destaques -->
+      
+        
+
+        <!-- Habilidades -->
+        <div class="about-skills">
+          
+          
+         
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJETOS — carrossel com fundo vermelho #380809
+       ============================================================ -->
+  <section id="projetos" class="projects">
+    <div class="wrap-projects">
+      <span class="section-eyebrow">Meus projetos</span>
+      <h2 class="section-title font-serif">
+        Projetos que dão vida às <em>ideias</em>.
+      </h2>
+      <p class="section-desc">
+        Uma coleção de trabalhos que representam minha criatividade, minhas
+        habilidades e minha evolução.
+      </p>
+
+      <!-- Carrossel -->
+      <div class="carousel carousel--maroon" data-carousel aria-roledescription="carrossel" aria-label="Meus projetos">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO MAR/26</span>
+                <h3 class="font-serif">THREE SEAS</h3>
+                <p> Nessa atividade precisavamos criar uma empresa com IA e o meu grupo desenvolveu uma solução para otimizar o processo de design de produtos. </p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS - CANVA </span>
+                  <a href=" https://raissxx-star.github.io/site-three-seas/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Site de uma marca famosa no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO MAR/26</span>
+                <h3 class="font-serif"> APLICATIVO DE ACADEMIA</h3>
+                <p> Aplicativo para gerenciar academias, com funcionalidades de agendamento, acompanhamento de treinos e comunicação com professores.</p>
+                <div class="card-footer">
+                  <span class="card-tech"> FIGMA</span>
+                  <a href="https://www.figma.com/proto/Yo5vITsGNUWRmHZWgUXZYn/SOPHIA-ROMAN-PAVLINSCENKYTE-SOARES-LOUREIRO-NUNES-PAIX%C3%83O-s-team-library?node-id=3316-38&starting-point-node-id=3316%3A38&t=w71tX3rn1s7buTra-1" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Meu Portfólio Pessoal no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif">OS PIORES APPS</h3>
+                <p> Estudo sobre os piores aplicativos do mercado, analisando sua usabilidade, design e impacto no usuário.</p>
+                <div class="card-footer">
+                  <span class="card-tech"> FIGMA</span>
+                  <a href="https://www.figma.com/proto/DEBTBGM62rj9gS0sgClB2m/APP--%C3%81-La-Carte?node-id=1-5&starting-point-node-id=1%3A4&t=EWZ47UemSWsvjJSy-1" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Landing Page de Evento no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif"> GALERIA DE FOTOS</h3>
+                <p> Galeria de fotos para exibir imagens de forma organizada e visualmente atraente.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS - JavaScript</span>
+                  <a href="https://isaaraujofernandes.github.io/Galeria-de-fotos/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Calculadora Online no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif"> FORMULÁRIO</h3>
+                <p>Formulário de cadastro com validação de campos, estilo responsivo e integração com backend para armazenamento de dados.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS - JavaScript</span>
+                  <a href="https://isaaraujofernandes.github.io/Formul-rio/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Lista de Tarefas no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif"> SITE SIMPLES </h3>
+                <p>Site simples para apresentar informações sobre um determinado tema, com seções de conteúdo e navegação intuitiva.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS </span>
+                  <a href="https://isaaraujofernandes.github.io/Conte-do-de-artista/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Cardápio Digital no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif"> RELEITURA DE SITE </h3>
+                <p>Revisão e otimização de um site existente, focando em melhorias de usabilidade, performance e design.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS - JavaScript</span>
+                  <a href="https://isaaraujofernandes.github.io/Clone-de-um-site-famoso/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Jogo da Memória no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO MAIO/26</span>
+                <h3 class="font-serif"> SISTEMA SOLAR</h3>
+                <p>sistema solar criado com HTML, CSS e JavaScript, demonstrando as órbitas dos planetas e suas características principais.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS</span>
+                  <a href="https://isaaraujofernandes.github.io/Sistema-Solar/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Blog Pessoal no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO ABRIL/26</span>
+                <h3 class="font-serif"> RÉPLICA SPOTIFY</h3>
+                <p>Recriação do layout do Spotify focada em replicar a interface e funcionalidades principais.</p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS</span>
+                  <a href="https://www.figma.com/proto/3xtrGJ3syhpmj05ieppAi5/Sem-t%C3%ADtulo?node-id=1-4&starting-point-node-id=1%3A3&t=kBzSsEuHrjWXa81y-1" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Blog Pessoal no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag"> MÊS DO DESENVOLVIMENTO NOV/26</span>
+                <h3 class="font-serif"> BOAS PRÁTICAS</h3>
+                <p> Boas práticas para a vida profissional </p>
+                <div class="card-footer">
+                  <span class="card-tech">HTML - CSS</span>
+                  <a href="https://isaaraujofernandes.github.io/Boas-pr-ticas/" target="_blank" rel="noopener noreferrer" aria-label="Visualizar projeto Blog Pessoal no GitHub">
+                    Visualizar <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Setas do carrossel -->
+        <button class="carousel-arrow carousel-arrow--prev" type="button" data-prev aria-label="Item anterior">
+          <svg class="icon i-20" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow--next" type="button" data-next aria-label="Próximo item">
+          <svg class="icon i-20" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+        </button>
+
+        <!-- Bolinhas de navegação (criadas pelo script.js) -->
+        <div class="carousel-dots" role="tablist" aria-label="Escolher item"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICADOS — carrossel com fundo azul #21304D
+       ============================================================ -->
+  <section id="certificados" class="certificates">
+    <div class="wrap-projects">
+      <span class="section-eyebrow">Meus certificados</span>
+      <h2 class="section-title font-serif">
+        Certificados que marcam minha <em>evolução</em>.
+      </h2>
+      <p class="section-desc">
+        Os cursos e formações que concluí para aprimorar minhas habilidades e
+        dar mais um passo na minha jornada.
+      </p>
+
+      <!-- Carrossel -->
+      <div class="carousel carousel--navy" data-carousel aria-roledescription="carrossel" aria-label="Meus certificados">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Curso Online</span>
+                <h3 class="font-serif">ACELERANDO A TRANSIÇÃO PARA A ECONOMIA CIRCULAR.</h3>
+                <p>Aprendizado sobre práticas sustentáveis e estratégias para tornar a economia mais eficiente, reduzindo desperdícios e impactos ambientais.</p>
+                <div class="card-footer">
+               
+                  <a href="https://drive.google.com/file/d/1ziFIWuPPJwCPGuWrkhtBt1gwNlbxnDdU/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de HTML e CSS">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Curso Online</span>
+                <h3 class="font-serif">CICLOS DE RETORNO PARA ECONOMIA CIRCULAR.</h3>
+                <p>Estudo de estratégias de reaproveitamento, reutilização e retorno de materiais ao ciclo produtivo, promovendo a sustentabilidade.</p>
+                <div class="card-footer">
+               <a href="https://drive.google.com/file/d/1mYDQNnCKlRK_zc4FNEDljG44PGbsgP1N/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Lógica de Programação">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Curso Online</span>
+                <h3 class="font-serif">Certificado_COMPETENCIA TRANSVERSAL- SEGURANÇA NO TRABALHO </h3>
+                <p> Conhecimentos sobre prevenção de acidentes, identificação de riscos e práticas para manter um ambiente de trabalho seguro.</p>
+                <div class="card-footer">
+              
+                  <a href="https://drive.google.com/file/d/1yilaimNm3MupzjvaThDLNyVmL31JTBWl/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado JavaScript do Básico ao Intermediário">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Curso Intensivo</span>
+                <h3 class="font-serif">CRIAÇÃO DE AGENTES COM IA  USANDO O Microsoft AI Foundr.</h3>
+                <p>Introdução à criação de agentes de inteligência artificial utilizando ferramentas da Microsoft para desenvolver soluções inteligentes.</p>
+                <div class="card-footer">
+          
+                  <a href="https://drive.google.com/file/d/1RvdWPT7F3IKy5Eir1s2z3d6JVyfFGwiY/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Git e GitHub">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Curso Online</span>
+                <h3 class="font-serif">DESVENDANDO A DESCARBONIZAÇÃO.</h3>
+                <p>Aprendizado sobre a redução das emissões de carbono e as estratégias utilizadas para combater as mudanças climáticas.</p>
+                <div class="card-footer">
+               
+                  <a href="https://drive.google.com/file/d/1jCUsIZSmO24Ng_9YPjmGE_7_xleY-Rbl/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Design Responsivo">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">ÉTICA NA INTELIGENCIA ARTIFICIAL.</h3>
+                <p>Estudo sobre o uso responsável da inteligência artificial, considerando privacidade, transparência, segurança e impactos sociais.</p>
+                <div class="card-footer">
+               
+                  <a href="https://drive.google.com/file/d/1iw0taPGl74lhLl6AFti0PuBpkZ3HfFxy/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">EXECEL BASICO.</h3>
+                <p>Conhecimentos fundamentais sobre planilhas, organização de dados, fórmulas e ferramentas básicas do Microsoft Excel.</p>
+                <div class="card-footer">
+               
+                  <a href="https://drive.google.com/file/d/1s0c8lHrWvVA-KL6T5d1MRQ4nw-EVGYIX/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+              <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">FUNDAMENTOS E AÇÕES DA ECONOMIA CIRCULAR.</h3>
+                <p>Compreensão dos princípios da economia circular e de ações que incentivam o consumo consciente, a reutilização e a redução de resíduos.</p>
+                <div class="card-footer">
+             
+                  <a href="https://drive.google.com/file/d/1AqKNHT2xx_LPC0Lo7H-se9Bs5IoeqBOW/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">Certificado_IMPLEMENTAÇÃO DE SERVIÇOS DE INTELIGENCIA ARTIFICIAL EM NUVEM - Microsoft AI-90.</h3>
+                <p>Introdução aos conceitos de inteligência artificial na nuvem e aos serviços da Microsoft Azure para desenvolver soluções baseadas em IA.</p>
+                <div class="card-footer">
+                
+                  <a href="https://drive.google.com/file/d/1nH4Yppc4EUC6rHbzW7N37wMgf4waTyGr/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+           <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">IMPLEMENTAÇÃO DE SERVIÇOS EM NUVEM  - AWS Cloud Practitioner Foundationa.</h3>
+                <p>Conhecimentos introdutórios sobre computação em nuvem, serviços da AWS, armazenamento, infraestrutura e segurança.</p>
+                <div class="card-footer">
+           
+                  <a href="https://drive.google.com/file/d/1UR7hpRGoJAaWMChW2x5crSUQhOTUISQk/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+             <article class="carousel-slide">
+              <div class="card">
+                <span class="card-tag">Workshop</span>
+                <h3 class="font-serif">POR DENTRO DA SEGURANÇA CIBERNETICA.</h3>
+                <p>Aprendizado sobre os fundamentos da segurança cibernética, proteção de informações, ameaças digitais e boas práticas de segurança.</p>
+                <div class="card-footer">
+           
+                  <a href="https://drive.google.com/file/d/161RjHl3cOHj3XWzRaO8lowyCmIvqo2zf/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado Fundamentos de UI/UX">
+                    Ver certificado <svg class="icon i-16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Setas do carrossel -->
+        <button class="carousel-arrow carousel-arrow--prev" type="button" data-prev aria-label="Item anterior">
+          <svg class="icon i-20" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow--next" type="button" data-next aria-label="Próximo item">
+          <svg class="icon i-20" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+        </button>
+
+        <!-- Bolinhas de navegação (criadas pelo script.js) -->
+        <div class="carousel-dots" role="tablist" aria-label="Escolher item"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATOS
+       ============================================================ -->
+  <section id="contatos" class="contacts">
+    <!-- Título da seção -->
+    <div class="contacts-head">
+      <h2 class="font-hand">CONTATOS</h2>
+      <svg class="wavy" viewBox="0 0 220 14" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+        <path d="M3 7 Q 14 1, 25 7 T 47 7 T 69 7 T 91 7 T 113 7 T 135 7 T 157 7 T 179 7 T 201 7 T 217 7" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <p>
+        Vamos conversar? Me chame em qualquer uma das plataformas abaixo —
+        será um prazer trocar ideias com você!
+      </p>
+    </div>
+
+    <!-- Cartões de contato -->
+    <div class="contacts-cards">
+      <a class="contact-card" href="mailto:isaaraujofernandes2024@gmail.com" aria-label="Contato via E-mail: isaaraujofernandes2024@gmail.com">
+        <span class="contact-arrow" aria-hidden="true"><svg class="icon i-16"><use href="#i-arrow-up-right"/></svg></span>
+        <span class="contact-icon"><svg class="icon i-24" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <span class="contact-label">E-mail</span>
+        <span class="contact-value">isaaraujofernandes2024@gmail.com</span>
+      </a>
+
+      <a class="contact-card" href="https://instagram.com/_iisafermandes" target="_blank" rel="noopener noreferrer" aria-label="Contato via Instagram: @_iisafermandes">
+        <span class="contact-arrow" aria-hidden="true"><svg class="icon i-16"><use href="#i-arrow-up-right"/></svg></span>
+        <span class="contact-icon"><svg class="icon i-24" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+        <span class="contact-label">Instagram</span>
+        <span class="contact-value">@_.isaafernandes</span>
+      </a>
+
+      <a class="contact-card" href="https://www.linkedin.com/in/isabella-fernandes" target="_blank" rel="noopener noreferrer" aria-label="Contato via LinkedIn: Isabella Fernandes">
+        <span class="contact-arrow" aria-hidden="true"><svg class="icon i-16"><use href="#i-arrow-up-right"/></svg></span>
+        <span class="contact-icon"><svg class="icon i-24" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">Isabella Fernandes</span>
+      </a>
+
+      <a class="contact-card" href="https://github.com/Issaraujofermandes" target="_blank" rel="noopener noreferrer" aria-label="Contato via GitHub: Issaraujofermandes">
+        <span class="contact-arrow" aria-hidden="true"><svg class="icon i-16"><use href="#i-arrow-up-right"/></svg></span>
+        <span class="contact-icon"><svg class="icon i-24" aria-hidden="true"><use href="#i-github"/></svg></span>
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">Isaaraujofermandes</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <!-- Sobre -->
+        <div class="footer-about">
+          <a href="#inicio" class="footer-logo font-hand" aria-label="Voltar ao início">
+            Isabella<span>.</span>
+          </a>
+          <p>
+            Desenvolvedora Web apaixonada por transformar ideias em páginas
+            criativas e funcionais.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <h3>Navegação</h3>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
+
+        <!-- Redes sociais -->
+        <div class="footer-social">
+          <h3>Vamos conversar?</h3>
+          <p>Me chame em qualquer uma das minhas redes — respondo rapidinho!</p>
+          <div class="footer-social-links">
+            <a href="mailto:issaraujofermandes2024@gmail.com" aria-label="E-mail">
+              <svg class="icon i-16" aria-hidden="true"><use href="#i-mail"/></svg>
+            </a>
+            <a href="https://instagram.com/_iisafermandes" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon i-16" aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/isabella-fernandes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon i-16" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
+            <a href="https://github.com/Issaraujofermandes" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="icon i-16" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha divisória -->
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <!-- Barra inferior -->
+      <div class="footer-bottom">
+        <p>© <span id="ano">2026</span> Isabella Fernandes · Todos os direitos reservados</p>
+        <p class="footer-made">
+          Obrigada por visitar meu portfólio!
+         
+         
+        </p>
+        <a href="#inicio" class="footer-top" aria-label="Voltar ao topo">
+          Voltar ao topo
+          <span aria-hidden="true"><svg class="icon i-14"><use href="#i-arrow-up"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Comportamentos do site: menu, tema claro/escuro e carrosséis -->
+  <script src="script.js"></script>
+</body>
+</html>
